@@ -52,7 +52,7 @@ export default function ProductCard(props: ProductCardProps) {
     <div className="product-card">
       <img
         className="product-card__image"
-        src={`/src/assets/images/${props.image}`}
+        src={`/images/${props.image}`}
         alt={props.name}
       />
       <div className="product-card__data">
