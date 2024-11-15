@@ -1,0 +1,14 @@
+.energy-tag {
+    position: relative;
+
+    p {
+        display: block;
+        position: absolute;
+        top: 0.2rem;
+        left: 0.6rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        font-weight: 700;
+        color: var(--color-white);
+    }
+}

@@ -1,0 +1,17 @@
+@mixin input-base {
+  background-color: var(--color-white);
+  min-width: 22.5rem;
+  width: fit-content;
+  padding-block: 0.8rem;
+  padding-inline: 1.2rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: var(--color-black);
+  border: 1px solid transparent;
+
+  &::placeholder {
+    color: var(--color-black);
+  }
+}

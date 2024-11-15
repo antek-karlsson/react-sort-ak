@@ -1,0 +1,51 @@
+.base-button {
+  min-width: 17rem;
+  display: block;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  border: 2px solid transparent;
+  border-radius: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--initial {
+    background-color: var(--color-button-initial);
+
+    &:hover {
+      background-color: var(--color-white);
+      border-color: var(--color-button-initial);
+      color: var(--color-button-initial);
+    }
+  }
+
+  &--active {
+    background-color: var(--color-button-active);
+
+    &:hover {
+      background-color: var(--color-white);
+      border-color: var(--color-button-active);
+      color: var(--color-button-active);
+    }
+  }
+
+  &--load-more {
+    background-color: transparent;
+    color: var(--color-blue-light);
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
