@@ -1,95 +1,94 @@
 .product-card {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  max-width: 33.8rem;
+  max-height: 60.3rem;
+  border-radius: 2rem;
+  padding-block: 2.5rem;
+  padding-inline: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+  &__image {
     width: 100%;
     height: 100%;
-    max-width: 33.8rem;
-    max-height: 60.3rem;
-    border-radius: 2rem;
-    padding-block: 2.5rem;
-    padding-inline: 2.4rem;
+    max-width: 20rem;
+  }
+
+  &__data {
     display: flex;
     flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  &__list-item,
+  &__energy-label,
+  &__price-dates {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: var(--color-gray-text-light);
+
+    strong {
+      font-weight: 700;
+      color: var(--color-black);
+    }
+  }
+
+  &__energy {
+    align-self: flex-start;
+    display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 0.8rem;
+  }
 
-    &__image {
-        width: 100%;
-        height: 100%;
-       max-width: 20rem;
-    }
+  &__price-info {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    &__data {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.4rem;
-    }
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--color-black);
+  }
 
-    &__name {
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        font-weight: 700;
-    }
+  &__price-decimal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-    }
-
-    &__list-item, 
-    &__energy-label, 
-    &__price-dates {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        font-weight: 400;
-        color: var(--color-gray-text-light);
-
-        strong {
-            font-weight: 700;
-            color: var(--color-black);
-        }
-    }
-
-    &__energy {
-        align-self: flex-start;
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-    }
-
-    &__price-info {
-        align-self: flex-start;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    &__price {
-        display: flex;
-        align-items: flex-end;
-        gap: 0.2rem;
-        font-size: 4rem;
-        line-height: 1;
-        font-weight: 700;
-        color: var(--color-black);
-    }
-
-    &__price-decimal {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.6rem;
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-    }
-
-    &__installments {
-        align-self: flex-start;
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-        font-weight: 700;
-        color: var(--color-gray-text-dark);
-    }
+  &__installments {
+    align-self: flex-start;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: var(--color-gray-text-dark);
+  }
 }
